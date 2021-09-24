@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Timeline } from './Timeline'
+import styled from "styled-components";
+import { svgWidth } from './Timeline/variables'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+        <Title> 13TH </Title>
+        <Timeline />
+
+    </Container>
   );
 }
+
+const Title = styled.h1`
+font-family: Yaldevi;
+color: transparent;
+font-size: 13rem;
+margin: 0;
+margin-top: 50px;
+background-color: coral;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+background-clip: text;
+-webkit-background-clip: text;
+`
+
+const Container = styled.div`
+max-width: ${svgWidth}px;
+margin:auto;
+
+`
 
 export default App;

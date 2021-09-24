@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  background-image: url("https://www.transparenttextures.com/patterns/broken-noise.png");
+
+  font-family: 'JosefinSans';
+}
+
+@font-face {
+  font-family: 'JosefinSans';
+  src: local('JosefinSans'),
+    url(assets/JosefinSans-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Yaldevi';
+  src: local('JosefYaldeviinSans'),
+    url(assets/Yaldevi.ttf) format('truetype');
+}
+
+
+
+.big-axis line, .big-axis path, .axis path, .axis line{
+  stroke: linen;
+}
+
+.big-axis text, .axis text {
+  fill: linen;
+}
+
+foreignObject {
+  color: linen;
+}
+
+foreignObject > * {
+  font-size: 10px;
+  text-align: center;
+}
+
+.button {
+  margin-bottom: 50px;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  background-color: none;
+  color: #002f49;
+  max-width: 200px;
+  text-align: center;
+  border: 1px solid #002f49;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding: 12px 30px;
+  font-family: 'Roboto', san-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button a {
+  color: #002f49;
+}
+
+.button:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #002f49;
+  color: white;
+}
